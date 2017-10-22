@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
+                //*****This is an Explicit Intent because I know what app should receive the explicit intent; in this case the NumberActivity.*****
                 // Create a new intent to open the {@link NumbersActivity}
                 Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
 
