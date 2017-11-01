@@ -1,6 +1,7 @@
 package com.example.android.miwok;
 
 import android.media.MediaPlayer;
+import android.util.Log;
 
 /**
  * Created by Aaron on 16/10/2017.
@@ -116,5 +117,23 @@ public class Word {
      */
     public int getAudioResourceId() {
         return mAudioResourceId;
+    }
+
+    /**
+     * Overriding the toString() method of any class, which is optional.
+     * However, it’s a helpful practice because in the future,
+     * you may want to print the current state of an object
+     * to the logs (instead of using the step-by-step debugger in Android Studio).
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Word{" +
+                "mDefaultTranslation='" + mDefaultTranslation + '\'' +
+                ", mMiwokTranslation='" + mMiwokTranslation + '\'' +
+                ", mImageResourceId=" + mImageResourceId +
+                ", mAudioResourceId=" + mAudioResourceId +
+                '}';
     }
 }
